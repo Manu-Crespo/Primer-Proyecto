@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/Background.jpg);
+    background-repeat: repeat;
+    background-position: top;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25px;
+}
+
+button {
+    align-items: end;
+    font-size: 1.5em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: transparent;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(230, 113, 71);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245, 0.75);
+}
+
+header .logo {
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: rgb(228, 112, 69);
+    font-size: 35px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: rgb(228, 112, 69);
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#opciones {
+    position: absolute;
+    margin: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#cerrar {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: white;
+    margin: 10px;
+}
+
+#cerrar:hover {
+    color: white;
+    background-color: rgb(233, 116, 73);
+}
+
+#opciones li {
+    margin-bottom: 10px;
+}
+
+#opciones a {
+    color: white;
+}
+
+#opciones a:hover {
+    color: rgb(228, 112, 69);
+}
+
+.listado {
+    margin-top: 30px;
+}
+
+#listado1 {
+    margin-top: -10px;
+}
+
+.listado h2 {
+    text-align: center;
+    color: coral;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.listado h3 {
+    text-align: center;
+    color: coral;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#listaVer {
+    padding: 10px;
+    display: flex;
+    overflow-y: auto;
+}
+
+#listaVer img {
+    border-radius: 15px;
+    width: 100%;
+    margin-right: 10px;
+    width: 300px;
+    height: 500px;
+}
+
+#listaVer p {
+    color: rgb(223, 110, 70);
+    background-color: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+#listaVisto {
+    padding: 10px;
+    display: flex;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+#listaVisto img {
+    border-radius: 15px;
+    width: 100%;
+    margin-right: 10px;
+    width: 300px;
+    height: 500px;
+}
+
+#listaVisto p {
+    color: rgb(223, 110, 70);
+    background-color: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+#redes {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#redes a {
+    color: coral;
+    margin: 20px;
+}
+
+#sobre-proyecto {
+    margin-top: 20px;
+    color: rgb(223, 110, 70);
+    background-color: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+footer {
+    color: coral;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    font-family: italic;
+    margin: auto;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #opciones {
+        right: 10px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .listado {
+        padding-top: 50px;
+    }
+
+    #listado1 {
+        margin-top: -55px;
+    }
+
+    #listaVisto img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
